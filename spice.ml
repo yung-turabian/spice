@@ -1,9 +1,12 @@
-module Ease =
-struct
-    let fst3 (x, _, _) = x
-    let snd3 (_, y, _) = y
-    let thd3 (_, _, z) = z
-end
+(** A general extensible layer for OCaml.
+
+    More specific things are split off into modules while the most general-use
+    are kept in the file scope.
+*)
+
+let fst3 (x, _, _) = x
+let snd3 (_, y, _) = y
+let thd3 (_, _, z) = z
 
 module IO =
 struct
