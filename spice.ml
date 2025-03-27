@@ -4,9 +4,15 @@
     are kept in the file scope.
 *)
 
+(* General functions *)
 let fst3 (x, _, _) = x
 let snd3 (_, y, _) = y
 let thd3 (_, _, z) = z
+
+let fst4 (x, _, _, _) = x
+let snd4 (_, y, _, _) = y
+let thd4 (_, _, z, _) = z
+let for4 (_, _, _, r) = r
 
 module IO =
 struct
