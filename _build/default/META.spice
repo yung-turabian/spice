@@ -1,0 +1,6 @@
+description = ""
+requires = ""
+archive(byte) = "spice.cma"
+archive(native) = "spice.cmxa"
+plugin(byte) = "spice.cma"
+plugin(native) = "spice.cmxs"

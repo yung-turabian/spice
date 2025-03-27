@@ -1,0 +1,16 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /home/hendog4eva/.cache/dune/db
+# Workspace root: /home/hendog4eva/Documents/Projects/spice
+# Auto-detected concurrency: 12
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/hendog4eva/.opam/default/bin/ocamlc.opt -config > /tmp/dune_bc64fd_output

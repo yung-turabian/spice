@@ -1,0 +1,30 @@
+(lang dune 3.17)
+(name spice)
+(sections (lib .) (libexec .) (doc ../../doc/spice))
+(files
+ (lib
+  (META
+   dune-package
+   opam
+   spice.a
+   spice.cma
+   spice.cmi
+   spice.cmt
+   spice.cmx
+   spice.cmxa
+   spice.ml))
+ (libexec (spice.cmxs))
+ (doc (README.md)))
+(library
+ (name spice)
+ (kind normal)
+ (archives (byte spice.cma) (native spice.cmxa))
+ (plugins (byte spice.cma) (native spice.cmxs))
+ (native_archives spice.a)
+ (main_module_name Spice)
+ (modes byte native)
+ (modules
+  (singleton
+   (obj_name spice)
+   (visibility public)
+   (source (path Spice) (impl (path spice.ml))))))

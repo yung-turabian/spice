@@ -1,0 +1,18 @@
+lib: [
+  "_build/install/default/lib/spice/META"
+  "_build/install/default/lib/spice/dune-package"
+  "_build/install/default/lib/spice/opam"
+  "_build/install/default/lib/spice/spice.a"
+  "_build/install/default/lib/spice/spice.cma"
+  "_build/install/default/lib/spice/spice.cmi"
+  "_build/install/default/lib/spice/spice.cmt"
+  "_build/install/default/lib/spice/spice.cmx"
+  "_build/install/default/lib/spice/spice.cmxa"
+  "_build/install/default/lib/spice/spice.ml"
+]
+libexec: [
+  "_build/install/default/lib/spice/spice.cmxs"
+]
+doc: [
+  "_build/install/default/doc/spice/README.md"
+]
