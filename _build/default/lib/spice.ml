@@ -46,20 +46,20 @@ end
 
 module Math =
 struct
-        let factorial_lookup = Hashtbl.create 50
+    let factorial_lookup = Hashtbl.create 50
 
-        (** [fact n] is [n!].
-            Requires: [n >= 0]. *)
-        let rec fact n = 
-            if n = 0 then 
-                1 
-            else if Hashtbl.mem factorial_lookup n then
-                Hashtbl.find factorial_lookup n
-            else
-                let x = n * fact (n - 1)
-                in 
-                    Hashtbl.add factorial_lookup n x;
-                    x
+    (** [fact n] is [n!].
+        Requires: [n >= 0]. *)
+    let rec fact n = 
+        if n = 0 then 
+            1 
+        else if Hashtbl.mem factorial_lookup n then
+            Hashtbl.find factorial_lookup n
+        else
+            let x = n * fact (n - 1)
+            in 
+                Hashtbl.add factorial_lookup n x;
+                x
 end
 
 
